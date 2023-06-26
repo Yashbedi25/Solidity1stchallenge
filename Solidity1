@@ -1,0 +1,24 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.18;
+
+contract Storage {
+
+   uint a;
+   int date;
+   string month;
+   address year;
+
+    function setNumber(uint _a,int _date,string memory _month,address _year) public {
+          a = _a;
+          date= _date;
+          month= _month;
+          year= _year;
+
+
+    }
+
+    function getNumber() public view returns (uint,int,string memory,address) {
+        return (a,date,month,year);
+
+    }
+ }
